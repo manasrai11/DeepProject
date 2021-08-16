@@ -1,0 +1,34 @@
+<nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <a class="navbar-brand animated bounceIn" routerLink="/home">Home</a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed =!isCollapsed" [attr.aria-expanded]
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapse" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link animated bounceIn" routerLink="/signup">Sign-Up <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active animated bounceIn">
+                <a class="nav-link" routerLink="/login">Login</a>                
+            </li>
+            <li ngbDropdown class="nav-item dropdown" >
+        
+                <a ngbDropdownToggle class="nav-link dropdown-toggle animated bounceIn"  id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                   Categories
+                </a>
+                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    
+                        <a ngbDropdownItem class="dropdown-item"  *ngFor="let cat of CategoryList" routerLink="{{cat.linkName}}">
+                            {{cat.categoryName}}
+                        </a> 
+                    
+                </div>
+ </li>
+            
+        </ul>
+        
+    </div>
+</nav>

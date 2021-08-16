@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-lg-12 col-xl-12">
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/imges/appliances carousel.jpg" class="d-block w-100" height="auto" width="auto">
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid offer pt-3 pb-3 bg-orange mt-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 m-right">
+        
+        <h4 class="animated flip infinite" > FREE SHIPPING </h4>
+        <p> on order above 500$</p>
+      
+      </div>
+      <div class="col-md-4 m-right">
+        <h4> CALL US ANYTIME </h4>
+        <p>+918989898989 </p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="animated flip infinite"> OUR LOCATION </h4>
+        <p> kanpur, India</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <h4>
+    <a routerLink="/home">All Items</a>
+  </h4>
+  <div class="row mt-1">
+
+    <div class="col-6 col-md-3 mb-2 md-0" *ngFor="let da of productList">
+      <div class="card">
+        <img class="card-img-top animated rotateIn" src="{{da.Image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{da.name}}</h5>
+          <p class="card-text">Lorem ipsum,Tempora minus, aliquid culpa doloremque nostrum officiis</p>
+          <a href="#" class="btn btn-primary animated rollIn">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" routerlink="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" routerlink="fruits">1</a></li>
+      <li class="page-item"><a class="page-link" routerlink="homeappliances">2</a></li>
+      <li class="page-item"><a class="page-link" routerlink="electronics">3</a></li>
+      <li class="page-item">
+        <a class="page-link" routerlink="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>

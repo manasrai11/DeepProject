@@ -1,0 +1,13 @@
+.change_content:after{
+    content: '';
+    animation: changetext 5s infinite linear;
+    color: rgba(82, 145, 245, 0.883);
+    }
+    @keyframes changetext{
+        0%{content:"Chair";}
+        30%{content:"Couch";}
+        60%{content:"Kitechen Items";}
+        100%{content:"Dining Table";}
+       
+    
+    }

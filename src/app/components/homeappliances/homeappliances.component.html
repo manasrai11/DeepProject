@@ -1,0 +1,40 @@
+
+
+<div class="container-fluid">
+  <h2>
+    <a routerLink="/home">Back To Home</a>
+  </h2>
+  <div class="d-flex justify-content-center">
+    <h1 style="color: rgba(250, 60, 35, 0.774);"> Welcome To Our Store We Have  <span class="change_content">
+
+    </span> </h1>
+
+  </div>
+  <div class="row mt-1">
+
+    <div class="col-6 col-md-3 mb-2 md-0" *ngFor="let da of productList">
+      <div class="card">
+        <img class="card-img-top animated rotateIn" src="{{da.Image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{da.name}}</h5>
+          <p class="card-text">Lorem ipsum,Tempora minus, aliquid culpa doloremque nostrum officiis</p>
+          <a href="#" class="btn btn-primary animated rollIn">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" routerlink="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" routerlink="fruits">1</a></li>
+      <li class="page-item"><a class="page-link" routerlink="homeappliances">2</a></li>
+      <li class="page-item"><a class="page-link" routerlink="electronics">3</a></li>
+      <li class="page-item">
+        <a class="page-link" routerlink="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  </div>

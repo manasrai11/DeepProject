@@ -1,0 +1,14 @@
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgba(82, 145, 245, 0.883);
+    }
+    @keyframes changetext{
+        0%{content:"Apple";}
+        20%{content:"Strawberry";}
+        40%{content:"Papaya";}
+        60%{content:"Grapes";}
+        80%{content:"Orange";}
+        100%{content:"Many More Fruits";}
+    
+    }
